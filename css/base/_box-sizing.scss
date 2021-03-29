@@ -1,0 +1,7 @@
+//header smartphone and pad//
+@mixin header-box {
+	box-sizing: border-box;
+	margin: 1.25rem auto 1.25rem auto;
+	height: auto;
+	width: 44%;
+}

@@ -1,0 +1,12 @@
+.head-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1.25rem auto 1.25rem auto;
+  height: auto;
+  width: 44%;
+}
+
+.head-box__logo {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

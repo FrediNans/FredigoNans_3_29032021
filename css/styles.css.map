@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,SAAS,CAAC;EEDT,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,yBAAyB;EACjC,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;CFGV;;AAHC,AAAD,eAAO,CAAC;EACP,KAAK,EAAE,IAAI;CACX",
+    "sources": [
+        "styles.scss",
+        "utils/_variables.scss",
+        "base/_box-sizing.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

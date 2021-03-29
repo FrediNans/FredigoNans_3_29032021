@@ -1,0 +1,9 @@
+@import "utils/_variables.scss";
+@import "base/_box-sizing.scss";
+// header ////////////////////////////
+.head-box {
+	@include header-box;
+	&__logo {
+		width: 100%;
+	}
+}
