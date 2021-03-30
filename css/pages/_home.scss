@@ -1,0 +1,47 @@
+.location-select {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	align-items: center;
+	height: 3.125rem;
+	&--color {
+		background-color: $medium-grey;
+		box-shadow: inset 0px 2px 4px -3px $dark-grey;
+	}
+	&__list {
+		appearance: none;
+		border: none;
+		font-weight: bold;
+		height: 90%;
+		&--color {
+			background-color: $medium-grey;
+			color: $dark-grey;
+			font-size: 1rem;
+		}
+	}
+}
+.location-select i {
+	position: absolute;
+	padding-right: 10rem;
+	color: $dark-grey;
+}
+.presentation {
+	height: 17.813rem;
+	padding-top: 2.813rem;
+	text-align: center;
+	&--color {
+		background-color: $light-grey;
+	}
+	h1 {
+		display: inline-block;
+		margin: 0% 15%;
+	}
+	h2 {
+		font-weight: normal;
+		font-size: 1rem;
+		margin: 1rem 10% 2rem 10%;
+	}
+}
+.btn-standard {
+	@include standard-button;
+}

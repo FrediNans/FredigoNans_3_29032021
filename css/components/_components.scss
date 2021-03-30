@@ -1,1 +1,61 @@
-//header button//////////////////
+//standard button///////////////////////////////////
+@mixin standard-button {
+	display: block;
+	height: 3.125rem;
+	width: 58.66%;
+	border: none;
+	margin: auto;
+	border-radius: 3.125rem;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	font-family: "roboto", sans-serif;
+	transition: all 0.4s;
+	cursor: pointer;
+
+	&--color {
+		background: $primary-color;
+		color: #ffffff;
+		font-weight: bold;
+		box-shadow: 0px 3px 5px darken($color: $medium-grey, $amount: 20);
+	}
+	&:hover {
+		box-shadow: 0px 3px 5px darken($color: $medium-grey, $amount: 40);
+		&::after {
+			opacity: 1;
+		}
+	}
+	&::after {
+		content: " ";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $primary-color;
+		background: linear-gradient(341deg, $primary-color 0%, #e972da 90%);
+		opacity: 0;
+		z-index: -1;
+		transition: opacity 0.3s;
+	}
+	&:active {
+		box-shadow: 0px 3px 5px darken($color: $medium-grey, $amount: 40);
+		&::after {
+			opacity: 1;
+		}
+	}
+	&::after {
+		content: " ";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $primary-color;
+		background: linear-gradient(341deg, $primary-color 0%, #e972da 90%);
+		opacity: 0;
+		z-index: -1;
+		transition: opacity 0.3s;
+	}
+}
