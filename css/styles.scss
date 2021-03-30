@@ -1,9 +1,16 @@
-@import "utils/_variables.scss";
-@import "base/_box-sizing.scss";
-// header ////////////////////////////
-.head-box {
-	@include header-box;
-	&__logo {
-		width: 100%;
-	}
-}
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "utils/variables", "utils/functions", "utils/mixins";
+
+// 2. Base stuff
+@import "base/base";
+
+// 3. Layout-related sections
+@import "layout/header", "layout/footer";
+
+// 4. Components
+@import "components/components";
+
+// 5. Page-specific styles
+@import "pages/home";

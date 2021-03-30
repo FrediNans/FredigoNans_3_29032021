@@ -1,12 +1,38 @@
-.head-box {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 1.25rem auto 1.25rem auto;
-  height: auto;
-  width: 44%;
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
-.head-box__logo {
-  width: 100%;
+/**
+   * Make all elements from the DOM inherit from the parent box-sizing
+   * Since `*` has a specificity of 0, it does not override the `html` value
+   * making all elements inheriting from the root box-sizing value
+   * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  margin-top: 1.25rem;
+}
+
+.btn-index-return {
+  position: absolute;
+  font-size: 2rem;
+  left: 1.25rem;
+  top: 1.7rem;
+}
+.btn-index-return:link {
+  color: #000000;
+}
+.btn-index-return:visited {
+  color: #000000;
+}/*# sourceMappingURL=styles.css.map */
