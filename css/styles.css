@@ -1,19 +1,11 @@
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
 }
 
-/**
-   * Make all elements from the DOM inherit from the parent box-sizing
-   * Since `*` has a specificity of 0, it does not override the `html` value
-   * making all elements inheriting from the root box-sizing value
-   * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-   */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+body {
+  margin: 0;
 }
 
 .logo {
@@ -22,6 +14,7 @@ html {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
   margin-top: 1.25rem;
+  padding-bottom: 0.5rem;
 }
 
 .btn-index-return {
@@ -31,8 +24,117 @@ html {
   top: 1.7rem;
 }
 .btn-index-return:link {
-  color: #000000;
+  color: #353535;
 }
 .btn-index-return:visited {
-  color: #000000;
+  color: #353535;
+}
+
+.location-select {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  height: 3.125rem;
+}
+.location-select--color {
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 4px -3px #353535;
+}
+.location-select__list {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-weight: bold;
+  height: 90%;
+}
+.location-select__list--color {
+  background-color: #eaeaea;
+  color: #353535;
+  font-size: 1rem;
+}
+
+.location-select i {
+  position: absolute;
+  padding-right: 10rem;
+  color: #353535;
+}
+
+.presentation {
+  height: 17.813rem;
+  padding-top: 2.813rem;
+  text-align: center;
+}
+.presentation--color {
+  background-color: #f6f6f6;
+}
+.presentation h1 {
+  display: inline-block;
+  margin: 0% 15%;
+}
+.presentation h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 1rem 10% 2rem 10%;
+}
+
+.btn-standard {
+  display: block;
+  height: 3.125rem;
+  width: 58.66%;
+  border: none;
+  margin: auto;
+  border-radius: 3.125rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-family: "roboto", sans-serif;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.btn-standard--color {
+  background: #9356dc;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0px 3px 5px #b7b7b7;
+}
+.btn-standard:hover {
+  box-shadow: 0px 3px 5px #848484;
+}
+.btn-standard:hover::after {
+  opacity: 1;
+}
+.btn-standard::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #9356dc;
+  background: linear-gradient(341deg, #9356dc 0%, #e972da 90%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+}
+.btn-standard:active {
+  box-shadow: 0px 3px 5px #848484;
+}
+.btn-standard:active::after {
+  opacity: 1;
+}
+.btn-standard::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #9356dc;
+  background: linear-gradient(341deg, #9356dc 0%, #e972da 90%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
 }/*# sourceMappingURL=styles.css.map */
