@@ -6,6 +6,7 @@
 	margin-top: 1.25rem;
 	padding-bottom: 0.5rem;
 }
+
 .btn-index-return {
 	position: absolute;
 	font-size: 2rem;
@@ -16,5 +17,14 @@
 	}
 	&:visited {
 		color: $dark-grey;
+	}
+}
+@media screen and (min-width: 800px) {
+	.logo {
+		font-size: 3rem;
+	}
+	.btn-index-return {
+		left: 2.5rem;
+		top: 2.4rem;
 	}
 }

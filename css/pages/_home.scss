@@ -1,46 +1,82 @@
-.location-select {
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	align-items: center;
-	height: 3.125rem;
-	&--color {
-		background-color: $medium-grey;
-		box-shadow: inset 0px 2px 4px -3px $dark-grey;
-	}
-	&__list {
-		appearance: none;
-		border: none;
-		font-weight: bold;
-		height: 90%;
-		&--color {
+////////////////////////presentation box//////////////////////////////////
+//location box//
+.location {
+	background-color: $light-grey;
+	padding-bottom: 3.125rem;
+	&__select {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		align-items: center;
+		position: relative;
+		height: 3.12rem;
+		&--setting {
+			box-shadow: inset 0px 2px 4px -3px $dark-grey;
 			background-color: $medium-grey;
+		}
+		&__icon {
 			color: $dark-grey;
-			font-size: 1rem;
+			margin-right: 1rem;
+		}
+		&__list {
+			appearance: none;
+			border: 0;
+			font-weight: bold;
+			user-select: none;
+			cursor: pointer;
+			height: 90%;
+
+			&--setting {
+				background-color: $medium-grey;
+				color: $dark-grey;
+				font-size: 1rem;
+			}
 		}
 	}
 }
-.location-select i {
-	position: absolute;
-	padding-right: 10rem;
-	color: $dark-grey;
-}
+//presentation box//
 .presentation {
-	padding: 2.813rem 0 3.5rem 0;
-
+	padding-top: 2.813rem;
 	text-align: center;
 	&--color {
 		background-color: $light-grey;
 	}
-	h1 {
+	&__tittle {
 		font-size: 1.5rem;
-		display: inline-block;
+
 		margin: 0% 15%;
 	}
-	h2 {
+	&__explanation {
 		font-weight: normal;
 		font-size: 1rem;
 		margin: 1rem 10% 2rem 10%;
+	}
+	&__btn-standard {
+		width: 60%;
+	}
+}
+@media screen and(min-width: 800px) {
+	.location {
+		padding-top: 3.125rem;
+
+		&__select {
+			width: 60%;
+			@include shadow-light;
+			border-radius: 1.56rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+	.presentation__btn-standard {
+		margin-top: 3.125rem;
+		font-size: 1rem;
+	}
+}
+@media screen and(min-width: 900px) {
+	.location {
+		width: 90%;
+		margin: auto;
+		border-radius: 1rem;
+		@include shadow-light;
 	}
 }
 
@@ -74,4 +110,53 @@
 }
 .restaurants-contents {
 	height: 15.625rem;
+}
+@media screen and (min-width: 600px) {
+	.restaurants-thumbnail {
+		width: 70%;
+		margin: 0 auto 1.5rem auto;
+	}
+}
+@media screen and (min-width: 700px) {
+	.restaurants-thumbnail {
+		width: 60%;
+		margin: 0 auto 1.5rem auto;
+	}
+}
+@media screen and (min-width: 900px) {
+	html,
+	body {
+		font-size: 20px;
+	}
+	.manual {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 2rem;
+		&__tittle {
+			width: 100%;
+		}
+	}
+	.manual-thumbnail {
+		width: 40%;
+		margin: 0 auto 2rem auto;
+	}
+	.restaurants {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		width: 90%;
+		margin: auto;
+		border-radius: 1rem;
+		@include shadow-light;
+		&__tittle {
+			width: 100%;
+		}
+	}
+	.restaurants-thumbnail {
+		width: 40%;
+		margin: 0 auto 2rem auto;
+	}
 }
