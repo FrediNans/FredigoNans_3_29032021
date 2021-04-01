@@ -26,13 +26,14 @@
 	color: $dark-grey;
 }
 .presentation {
-	height: 17.813rem;
-	padding-top: 2.813rem;
+	padding: 2.813rem 0 3.5rem 0;
+
 	text-align: center;
 	&--color {
 		background-color: $light-grey;
 	}
 	h1 {
+		font-size: 1.5rem;
 		display: inline-block;
 		margin: 0% 15%;
 	}
@@ -42,6 +43,35 @@
 		margin: 1rem 10% 2rem 10%;
 	}
 }
-.btn-standard {
-	@include standard-button;
+
+//////manual///////////////////////////////////////////////////////////////////////////
+
+.manual {
+	padding-bottom: 3.5rem;
+	&__tittle {
+		font-size: 1.5rem;
+		margin: 3.125rem 0 2rem 5.333%;
+	}
+}
+
+//////restaurants//////////////////////////////////////////////////////////////////////
+
+.restaurants {
+	background-color: $light-grey;
+	padding-top: 3.75rem;
+	padding-bottom: 2.75rem;
+	&__tittle {
+		font-size: 1.5rem;
+		margin: 0 0 1.625rem 5.333%;
+	}
+}
+.host {
+	margin: 0.9rem 0 0 1rem;
+	font-weight: bold;
+}
+.host-location {
+	margin: 0.6rem 0 1rem 1rem;
+}
+.restaurants-contents {
+	height: 15.625rem;
 }
