@@ -25,28 +25,144 @@
 			<div class="logo">ohmyfood</div>
 		</header>
 		<main>
-			<div class="location-select location-select--color">
-				<i class="location-select__icon fas fa-map-marker-alt"></i>
-				<select
-					name=""
-					class="location-select__list location-select__list--color"
-				>
-					<option value="">Paris, Belleville</option>
-					<option value="">Paris, Belleville</option>
-					<option value="">Paris, Belleville</option>
-					<option value="">Paris, Belleville</option>
-					<option value="">Paris, Belleville</option>
-				</select>
-			</div>
-			<article class="presentation presentation--color">
-				<h1>Réservez le menu qui vous convient</h1>
-				<h2>
-					Découvrez des restaurants d'exception, séléctionnés par nos soins.
-				</h2>
-				<button class="btn-standard btn-standard--color">
-					Explorer nos restaurants
-				</button>
-			</article>
+			<!-----------------presentation box--------------------------------------->
+			<section>
+				<div class="location-select location-select--color">
+					<i class="location-select__icon fas fa-map-marker-alt"></i>
+					<select
+						name="location"
+						class="location-select__list location-select__list--color"
+					>
+						<option value="">Paris, Belleville</option>
+						<option value="">Paris, Belleville</option>
+						<option value="">Paris, Belleville</option>
+						<option value="">Paris, Belleville</option>
+						<option value="">Paris, Belleville</option>
+					</select>
+				</div>
+				<article class="presentation presentation--color">
+					<h1>Réservez le menu qui vous convient</h1>
+					<h2>
+						Découvrez des restaurants d'exception, séléctionnés par nos soins.
+					</h2>
+					<button class="btn-standard btn-standard--color">
+						Explorer nos restaurants
+					</button>
+				</article>
+			</section>
+			<!-----------------------------manual box--------------------------------->
+			<section class="manual">
+				<h3 class="manual__tittle">Fonctionnement</h3>
+				<a href="#" class="manual-thumbnail">
+					<div class="chip chip--settings">1</div>
+					<div class="content content--settings">
+						<i class="manual-icon fas fa-mobile-alt"></i
+						><span class="manual-text">Choisissez un restaurant</span>
+					</div>
+				</a>
+				<a href="#" class="manual-thumbnail">
+					<div class="chip chip--settings">2</div>
+					<div class="content content--settings">
+						<i class="manual-icon fas fa-list-ul"></i
+						><span class="manual-text">Composez votre menu</span>
+					</div>
+				</a>
+				<a href="#" class="manual-thumbnail">
+					<div class="chip chip--settings">3</div>
+					<div class="content content--settings">
+						<i class="manual-icon fas fa-store"></i
+						><span class="manual-text">Dégustez au restaurant</span>
+					</div>
+				</a>
+			</section>
+			<!-------------------------------restaurants box-------------------------->
+			<!--addition of the line "<div class="restaurants-thumbnail__image__label">Nouveau</div>" under the image to put the label "Nouveau"-->
+			<section class="restaurants">
+				<h4 class="restaurants__tittle">Restaurants</h4>
+				<!---------------restau1----------------->
+				<article class="restaurants-thumbnail">
+					<a class="restaurants-thumbnail__link" href="ohmyfood-menu1.html">
+						<img
+							class="restaurants-thumbnail__image"
+							src="images/restaurant/lapalettedugout.jpg"
+							alt="La pallette du goût"
+						/>
+						<div class="restaurants-thumbnail__image__label">Nouveau</div>
+						<div class="restaurants-thumnail__text">
+							<div class="host">La palette du goût</div>
+							<div class="host-location">Ménilmontant</div>
+						</div>
+					</a>
+					<div class="restaurants-thumbnail__heart-button">
+						<input id="rest1" type="checkbox" />
+						<label for="rest1"
+							><i class="far fa-heart"></i><i class="fas fa-heart"></i
+						></label>
+					</div>
+				</article>
+				<!---------------restau2----------------->
+				<article class="restaurants-thumbnail">
+					<a class="restaurants-thumbnail__link" href="ohmyfood-menu2.html">
+						<img
+							class="restaurants-thumbnail__image"
+							src="images/restaurant/lanoteenchantee.jpg"
+							alt="La note enchantée"
+						/>
+						<div class="restaurants-thumbnail__image__label">Nouveau</div>
+						<div class="restaurants-thumnail__text">
+							<div class="host">La note enchantée</div>
+							<div class="host-location">Charonne</div>
+						</div>
+					</a>
+					<div class="restaurants-thumbnail__heart-button">
+						<input id="rest2" type="checkbox" />
+						<label for="rest2"
+							><i class="far fa-heart"></i><i class="fas fa-heart"></i
+						></label>
+					</div>
+				</article>
+				<!--------------restau3----------------->
+				<article class="restaurants-thumbnail">
+					<a class="restaurants-thumbnail__link" href="ohmyfood-menu3.html">
+						<img
+							class="restaurants-thumbnail__image"
+							src="images/restaurant/alafrancaise.jpg"
+							alt="À la française"
+						/>
+						<div class="restaurants-thumnail__text">
+							<div class="host">À la française</div>
+							<div class="host-location">Cité Rouge</div>
+						</div>
+					</a>
+					<div class="restaurants-thumbnail__heart-button">
+						<input id="rest3" type="checkbox" />
+						<label for="rest3"
+							><i class="far fa-heart"></i><i class="fas fa-heart"></i
+						></label>
+					</div>
+				</article>
+				<!-------------restau4----------------->
+				<article class="restaurants-thumbnail">
+					<a class="restaurants-thumbnail__link" href="ohmyfood-menu4.html">
+						<img
+							class="restaurants-thumbnail__image"
+							src="images/restaurant/ledelicedessens.jpg"
+							alt="Le délice des sens"
+						/>
+						<div class="restaurants-thumnail__text">
+							<div class="host">Le délice des sens</div>
+							<div class="host-location">Folie-Méricourt</div>
+						</div>
+					</a>
+					<div class="restaurants-thumbnail__heart-button">
+						<input id="rest4" type="checkbox" />
+						<label for="rest4"
+							><i class="far fa-heart"></i><i class="fas fa-heart"></i
+						></label>
+					</div>
+				</article>
+			</section>
+			<footer></footer>
 		</main>
 	</body>
 </html>
