@@ -193,6 +193,7 @@ input {
 		transform: scale(0);
 		background: linear-gradient($primary-color, $secondary-color);
 		background-clip: text;
+		-webkit-background-clip: text;
 		color: transparent;
 	}
 	&:checked + label > :first-child {
