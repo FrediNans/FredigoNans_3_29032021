@@ -1,0 +1,83 @@
+.menu-box {
+	background-color: $light-grey;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 3.125rem;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+
+	&__image {
+		width: 100%;
+		height: 15.625rem;
+		object-fit: cover;
+	}
+	&__text {
+		position: relative;
+		border-top-left-radius: 2.5rem;
+		border-top-right-radius: 2.5rem;
+		background-color: $light-grey;
+		margin-top: -2.4rem;
+	}
+	&__host {
+		font-family: "shrikhand";
+		font-size: 1.7rem;
+		margin-left: 1rem;
+		margin-top: 2.375rem;
+	}
+	&__heart-button {
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+}
+.starters {
+	background-color: $light-grey;
+	margin: 0;
+	&__tittle {
+		font-weight: normal;
+		margin-left: 1rem;
+		margin-bottom: 0.5rem;
+		width: 100%;
+		&__underline {
+			width: 2.5rem;
+			border-bottom: 3px solid $tertiary-color;
+			margin-left: 1rem;
+		}
+	}
+}
+
+.menu-thumbnail {
+	animation: menuanim 0.4s ease-in-out forwards;
+	&--1 {
+		animation-delay: 0.2s;
+	}
+	&--2 {
+		animation-delay: 0.3s;
+	}
+	&--3 {
+		animation-delay: 0.4s;
+	}
+	&--4 {
+		animation-delay: 0.5s;
+	}
+	&--5 {
+		animation-delay: 0.6s;
+	}
+	&--6 {
+		animation-delay: 0.7s;
+	}
+	&--7 {
+		animation-delay: 0.8s;
+	}
+	&--8 {
+		animation-delay: 0.9s;
+	}
+	&--9 {
+		animation-delay: 1s;
+	}
+	&--10 {
+		animation-delay: 1.1s;
+	}
+}

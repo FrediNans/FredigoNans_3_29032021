@@ -204,3 +204,84 @@ input {
 		transform: scale(1);
 	}
 }
+//////////////// menu thumnail //////////////////////////////////////////////////////
+.menu-thumbnail {
+	width: 93%;
+	display: flex;
+	justify-content: space-between;
+	height: 4.25rem;
+	overflow: hidden;
+	border-radius: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	opacity: 0;
+	transform: translateY(50px);
+	@include shadow-light;
+	&__sticker {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 0;
+		opacity: 0;
+		background-color: $tertiary-color;
+		transition: all 0.4s ease-in-out;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-around;
+		align-content: space-between;
+	}
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0.1rem;
+		width: 1.3rem;
+		height: 1.3rem;
+		background-color: #ffffff;
+		border-radius: 50%;
+		font-size: 0.8rem;
+		color: $tertiary-color;
+		transition: all 0.4s ease-in-out;
+	}
+	&:hover .menu-thumbnail__sticker {
+		width: 3.175rem;
+		opacity: 1;
+		flex-shrink: 0;
+	}
+	&:hover .menu-thumbnail__icon {
+		transform: rotatez(360deg);
+	}
+	&__dish-name {
+		display: block;
+		margin: 0.6rem 0 0 1rem;
+		width: 80%;
+		font-weight: bold;
+	}
+	&__info-bar {
+		display: flex;
+		justify-content: space-between;
+		width: auto;
+	}
+	&__info {
+		margin: 0 0 0.6rem 1rem;
+		width: 14rem;
+		white-space: nowrap;
+		font-size: 0.8rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&__price {
+		margin: 0 1rem 0.6rem 1rem;
+		font-weight: bold;
+		color: $dark-grey;
+	}
+	&:last-child {
+		margin-bottom: 3.125rem;
+	}
+}
+//////////////////////////////////////////////////
