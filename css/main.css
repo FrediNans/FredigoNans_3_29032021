@@ -139,7 +139,7 @@ body {
   animation-delay: 1.1s;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .menu-box {
     background-color: #ffffff;
   }
@@ -157,9 +157,17 @@ body {
     border-top-right-radius: 0;
     background-color: #f6f6f6;
   }
+  .menu__media900 {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+  }
 
   .starters {
-    width: 90%;
+    width: 45%;
     margin: 0 auto 1.5rem auto;
     border-radius: 1rem;
     background-color: #f6f6f6;
@@ -167,7 +175,7 @@ body {
   }
 
   .main-course {
-    width: 90%;
+    width: 45%;
     margin: 0 auto 1.5rem auto;
     border-radius: 1rem;
     background-color: #f6f6f6;
@@ -175,11 +183,15 @@ body {
   }
 
   .dessert {
-    width: 90%;
+    width: 45%;
     margin: 0 auto 1.5rem auto;
     border-radius: 1rem;
     background-color: #f6f6f6;
     box-shadow: 0px 3px 5px #b7b7b7;
+  }
+
+  .starters__tittle {
+    margin-top: 1rem;
   }
 }
 .footer {
@@ -524,12 +536,12 @@ input:checked + label > :last-child {
 }
 @media screen and (min-width: 670px) {
   .menu-thumbnail {
-    width: 80%;
+    width: 70%;
   }
 }
 @media screen and (min-width: 800px) {
   .menu-thumbnail {
-    width: 70%;
+    width: 80%;
   }
 }
 .body {
@@ -568,39 +580,41 @@ input:checked + label > :last-child {
   height: 300px;
   border-radius: 50%;
   border-top: 5px solid #ff79da;
-  animation: spinner 3s ease 0s infinite normal forwards;
+  border-right: 5px solid #f6f6f6;
+  box-shadow: 2px 2px 5px #ff79da;
+  animation: spinner 3s ease 0s 1 normal forwards;
 }
 
-.letter1 {
-  animation: letter 2s ease 0s infinite alternate forwards;
+.letter-1 {
+  animation: letter 2s ease 0s 2 alternate forwards;
 }
 
-.letter2 {
-  animation: letter 2s ease 0.1s infinite alternate forwards;
+.letter-2 {
+  animation: letter 2s ease 0.1s 2 alternate forwards;
 }
 
-.letter3 {
-  animation: letter 2s ease 0.2s infinite alternate forwards;
+.letter-3 {
+  animation: letter 2s ease 0.2s 2 alternate forwards;
 }
 
-.letter4 {
-  animation: letter 2s ease 0.3s infinite alternate forwards;
+.letter-4 {
+  animation: letter 2s ease 0.3s 2 alternate forwards;
 }
 
-.letter5 {
-  animation: letter 2s ease 0.4s infinite alternate forwards;
+.letter-5 {
+  animation: letter 2s ease 0.4s 2 alternate forwards;
 }
 
-.letter6 {
-  animation: letter 2s ease 0.5s infinite alternate forwards;
+.letter-6 {
+  animation: letter 2s ease 0.5s 2 alternate forwards;
 }
 
-.letter7 {
-  animation: letter 2s ease 0.6s infinite alternate forwards;
+.letter-7 {
+  animation: letter 2s ease 0.6s 2 alternate forwards;
 }
 
-.letter8 {
-  animation: letter 2s ease 0.7s infinite alternate forwards;
+.letter-8 {
+  animation: letter 2s ease 0.7s 2 alternate forwards;
 }
 
 @keyframes spinner {
@@ -616,7 +630,8 @@ input:checked + label > :last-child {
     opacity: 1;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.6;
+    color: #ff79da;
   }
   100% {
     opacity: 1;
@@ -761,11 +776,6 @@ input:checked + label > :last-child {
   }
 }
 @media screen and (min-width: 900px) {
-  html,
-body {
-    font-size: 20px;
-  }
-
   .manual {
     display: flex;
     flex-direction: row;

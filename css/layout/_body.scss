@@ -46,7 +46,7 @@
 		}
 	}
 }
-
+//////////////////menu animation/////////////////////////////////////////////////
 .menu-thumbnail {
 	animation: menuanim 0.4s ease-in-out forwards;
 	&--1 {
@@ -80,11 +80,10 @@
 		animation-delay: 1.1s;
 	}
 }
-@media screen and(min-width: 900px) {
+@media screen and(min-width: 800px) {
 	.menu-box {
 		background-color: #ffffff;
 	}
-
 	.menu {
 		width: 90%;
 		border: 5px $light-grey solid;
@@ -97,26 +96,37 @@
 			border-top-right-radius: 0;
 			background-color: $light-grey;
 		}
+		&__media900 {
+			display: flex;
+			margin: auto;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			width: 95%;
+		}
 	}
 	.starters {
-		width: 90%;
+		width: 45%;
 		margin: 0 auto 1.5rem auto;
 		border-radius: 1rem;
 		background-color: $light-grey;
 		@include shadow-light;
 	}
 	.main-course {
-		width: 90%;
+		width: 45%;
 		margin: 0 auto 1.5rem auto;
 		border-radius: 1rem;
 		background-color: $light-grey;
 		@include shadow-light;
 	}
 	.dessert {
-		width: 90%;
+		width: 45%;
 		margin: 0 auto 1.5rem auto;
 		border-radius: 1rem;
 		background-color: $light-grey;
 		@include shadow-light;
+	}
+	.starters__tittle {
+		margin-top: 1rem;
 	}
 }
