@@ -13,13 +13,13 @@
 }
 html {
   font-family: "Roboto", Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
   font-size: 16px;
   margin: 0;
 }
 
 body {
   margin: 0 1px 0 1px;
-  box-sizing: border-box;
 }
 
 .logo {
@@ -530,6 +530,113 @@ input:checked + label > :last-child {
 @media screen and (min-width: 800px) {
   .menu-thumbnail {
     width: 70%;
+  }
+}
+.body {
+  position: relative;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  color: #9356dc;
+  z-index: -999;
+  opacity: 0;
+  animation: loader 3s;
+  transform: scale(0);
+}
+.loader__box {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+.loader__spinner {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-top: 5px solid #ff79da;
+  animation: spinner 3s ease 0s infinite normal forwards;
+}
+
+.letter1 {
+  animation: letter 2s ease 0s infinite alternate forwards;
+}
+
+.letter2 {
+  animation: letter 2s ease 0.1s infinite alternate forwards;
+}
+
+.letter3 {
+  animation: letter 2s ease 0.2s infinite alternate forwards;
+}
+
+.letter4 {
+  animation: letter 2s ease 0.3s infinite alternate forwards;
+}
+
+.letter5 {
+  animation: letter 2s ease 0.4s infinite alternate forwards;
+}
+
+.letter6 {
+  animation: letter 2s ease 0.5s infinite alternate forwards;
+}
+
+.letter7 {
+  animation: letter 2s ease 0.6s infinite alternate forwards;
+}
+
+.letter8 {
+  animation: letter 2s ease 0.7s infinite alternate forwards;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+@keyframes letter {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    z-index: -999;
+    transform: scale(0);
   }
 }
 .location {
