@@ -1,18 +1,17 @@
 .logo {
 	display: flex;
 	justify-content: center;
-	font-family: "Shrikhand", cursive;
 	width: 100%;
-	font-size: 2rem;
 	margin-top: 1.25rem;
 	padding-bottom: 0.5rem;
+	font-family: $titlefont;
+	font-size: 2rem;
 }
-
 .btn-index-return {
 	position: absolute;
+	top: 1.7rem;
 	font-size: 2rem;
 	left: 1.25rem;
-	top: 1.7rem;
 	&:link {
 		color: $dark-grey;
 	}
