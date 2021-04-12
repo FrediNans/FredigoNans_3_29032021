@@ -554,7 +554,7 @@ input:checked + label > :last-child {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background: radial-gradient(circle, #353535 25%, #7e7e7e 100%);
+  background: #353535;
   z-index: -999;
   opacity: 0;
   transform: scale(0);
@@ -601,7 +601,7 @@ input:checked + label > :last-child {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: radial-gradient(circle, #353535 50%, #7e7e7e 100%);
+  background: #353535;
   border-radius: 50%;
 }
 
