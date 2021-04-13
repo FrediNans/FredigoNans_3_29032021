@@ -32,7 +32,7 @@
 	}
 }
 .starters {
-	margin: 0;
+	margin: 0 0 3rem 0;
 	background-color: $light-grey;
 	&__tittle {
 		margin: 0 0 0.5rem 1rem;
@@ -45,14 +45,33 @@
 		}
 	}
 }
+.main-course {
+	margin-bottom: 3rem;
+}
+.dessert {
+	margin-bottom: 3rem;
+}
 
 //////////////////menu animation/////////////////////////////////////////////////
 
-.menu-thumbnail {
+.menu-thumbnail__label {
 	animation: menuanim 0.4s ease-in-out forwards;
 }
+@keyframes menuanim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	80% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 @for $i from 1 through 10 {
-	.menu-thumbnail--#{$i} {
+	.menu-thumbnail__label--#{$i} {
 		animation-delay: 0.1s + $i/10;
 	}
 }
@@ -72,19 +91,27 @@
 			border-top-right-radius: 0;
 			background-color: $light-grey;
 		}
+		&__host {
+			margin-left: 0;
+			text-align: center;
+		}
+		&__heart-button {
+			right: 25%;
+		}
 		&__media900 {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			margin: auto;
-			width: 95%;
+			margin: 1rem auto 0 auto;
+			width: 90%;
 		}
 	}
 	.starters {
 		@include menu-location;
 		@include shadow-light;
 	}
+
 	.main-course {
 		@include menu-location;
 		@include shadow-light;
@@ -92,8 +119,23 @@
 	.dessert {
 		@include menu-location;
 		@include shadow-light;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.starters__tittle {
 		margin-top: 1rem;
+	}
+}
+@media screen and(min-width: 900px) {
+	.menu-box {
+		margin-top: 6rem;
+	}
+}
+@media screen and(min-width: 1300px) {
+	.starters,
+	.main-course,
+	.dessert {
+		width: 30%;
+		margin: 0 0 3rem 0;
 	}
 }

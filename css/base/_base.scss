@@ -11,3 +11,18 @@ html {
 body {
 	margin: 0 1px 0 1px;
 }
+@media screen and (min-width: 1400px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 1900px) {
+	html {
+		font-size: 25px;
+	}
+}
+@media screen and (min-width: 3800px) {
+	html {
+		font-size: 40px;
+	}
+}

@@ -28,9 +28,17 @@
 }
 @media screen and(min-width: 900px) {
 	.footer {
-		@include shadow-light;
-		margin: 2rem auto 2rem auto;
-		width: 90%;
-		border-radius: 1rem;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		&__logo {
+			margin: 0;
+		}
+		&__link {
+			margin: 0;
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 }
