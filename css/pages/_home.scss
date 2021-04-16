@@ -91,6 +91,76 @@
 	}
 }
 
+@for $i from 1 through 3 {
+	.manual-thumbnail#{$i} {
+		animation: manual-visu 3s ease-in infinite;
+		animation-delay: (0s + $i) * 1;
+	}
+}
+@for $i from 1 through 3 {
+	.manual-thumbnail__icon#{$i} {
+		animation: manual-visu-icon 3s ease-in infinite;
+		animation-delay: (0s + $i) * 1;
+	}
+}
+@for $i from 1 through 3 {
+	.manual-thumbnail__content--settings#{$i} {
+		animation: manual-visu-background 3s ease-in infinite;
+		animation-delay: (0s + $i) * 1;
+	}
+}
+@keyframes manual-visu {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(1.1);
+	}
+	23% {
+		transform: scale(1.1);
+	}
+	33% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes manual-visu-icon {
+	0% {
+		color: $medium-dark-grey;
+	}
+	10% {
+		color: $primary-color;
+	}
+	23% {
+		color: $primary-color;
+	}
+	33% {
+		color: $medium-dark-grey;
+	}
+	100% {
+		color: $medium-dark-grey;
+	}
+}
+@keyframes manual-visu-background {
+	0% {
+		background-color: $light-grey;
+	}
+	10% {
+		background-color: $primary-color-light;
+	}
+	23% {
+		background-color: $primary-color-light;
+	}
+	33% {
+		background-color: $light-grey;
+	}
+	100% {
+		background-color: $light-grey;
+	}
+}
+
 //////restaurants//////////////////////////////////////////////////////////////////////
 
 .restaurants {

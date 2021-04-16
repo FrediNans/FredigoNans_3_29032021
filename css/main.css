@@ -543,12 +543,6 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.manual-thumbnail:hover .manual-thumbnail__icon {
-  color: #9356dc;
-}
-.manual-thumbnail:hover .manual-thumbnail__content {
-  background-color: #f5edff;
-}
 .manual-thumbnail__icon {
   position: absolute;
   color: #7e7e7e;
@@ -786,6 +780,102 @@ body {
   font-size: 1.5rem;
 }
 
+.manual-thumbnail1 {
+  animation: manual-visu 3s ease-in infinite;
+  animation-delay: 1s;
+}
+
+.manual-thumbnail2 {
+  animation: manual-visu 3s ease-in infinite;
+  animation-delay: 2s;
+}
+
+.manual-thumbnail3 {
+  animation: manual-visu 3s ease-in infinite;
+  animation-delay: 3s;
+}
+
+.manual-thumbnail__icon1 {
+  animation: manual-visu-icon 3s ease-in infinite;
+  animation-delay: 1s;
+}
+
+.manual-thumbnail__icon2 {
+  animation: manual-visu-icon 3s ease-in infinite;
+  animation-delay: 2s;
+}
+
+.manual-thumbnail__icon3 {
+  animation: manual-visu-icon 3s ease-in infinite;
+  animation-delay: 3s;
+}
+
+.manual-thumbnail__content--settings1 {
+  animation: manual-visu-background 3s ease-in infinite;
+  animation-delay: 1s;
+}
+
+.manual-thumbnail__content--settings2 {
+  animation: manual-visu-background 3s ease-in infinite;
+  animation-delay: 2s;
+}
+
+.manual-thumbnail__content--settings3 {
+  animation: manual-visu-background 3s ease-in infinite;
+  animation-delay: 3s;
+}
+
+@keyframes manual-visu {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  23% {
+    transform: scale(1.1);
+  }
+  33% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes manual-visu-icon {
+  0% {
+    color: #7e7e7e;
+  }
+  10% {
+    color: #9356dc;
+  }
+  23% {
+    color: #9356dc;
+  }
+  33% {
+    color: #7e7e7e;
+  }
+  100% {
+    color: #7e7e7e;
+  }
+}
+@keyframes manual-visu-background {
+  0% {
+    background-color: #f6f6f6;
+  }
+  10% {
+    background-color: #f5edff;
+  }
+  23% {
+    background-color: #f5edff;
+  }
+  33% {
+    background-color: #f6f6f6;
+  }
+  100% {
+    background-color: #f6f6f6;
+  }
+}
 .restaurants {
   padding-top: 3.75rem;
   padding-bottom: 2.75rem;
