@@ -75,9 +75,10 @@
 		animation-delay: 0.1s + $i/10;
 	}
 }
-@media screen and(min-width: 800px) {
+@media screen and(min-width: 750px) {
 	.menu-box {
 		background-color: #ffffff;
+		margin-top: 6rem;
 	}
 	.menu {
 		@include shadow-light;
@@ -126,11 +127,7 @@
 		margin-top: 1rem;
 	}
 }
-@media screen and(min-width: 900px) {
-	.menu-box {
-		margin-top: 6rem;
-	}
-}
+
 @media screen and(min-width: 1300px) {
 	.starters,
 	.main-course,

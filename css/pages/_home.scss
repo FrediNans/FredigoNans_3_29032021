@@ -114,10 +114,10 @@
 		transform: scale(1);
 	}
 	10% {
-		transform: scale(1.1);
+		transform: scale(1.02);
 	}
 	23% {
-		transform: scale(1.1);
+		transform: scale(1.02);
 	}
 	33% {
 		transform: scale(1);
@@ -193,6 +193,11 @@
 		width: 60%;
 		margin: 0 auto 1.5rem auto;
 	}
+	.manual-thumbnail {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 @media screen and (min-width: 900px) {
 	.manual {
@@ -224,7 +229,7 @@
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		width: 90%;
-		margin: auto;
+		margin: auto auto 3rem auto;
 		border-radius: 1rem;
 		&__tittle {
 			width: 100%;
