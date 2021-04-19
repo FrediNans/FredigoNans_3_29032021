@@ -51,12 +51,16 @@
 		width: 60%;
 	}
 }
-@media screen and(min-width: 800px) {
+@media screen and(min-width: 750px) {
 	.location {
+		@include shadow-light;
 		padding-top: 3.125rem;
+		width: 90%;
+		margin: 9rem auto 0 auto;
+		border-radius: 1rem;
 		&__select {
 			@include shadow-light;
-			width: 60%;
+			width: 40%;
 			border-radius: 1.56rem;
 			margin-bottom: 0.5rem;
 		}
@@ -64,20 +68,9 @@
 	.presentation__btn-standard {
 		margin-top: 3.125rem;
 		font-size: 1rem;
-	}
-}
-@media screen and(min-width: 900px) {
-	.location {
-		@include shadow-light;
-		width: 90%;
-		margin: 9rem auto 0 auto;
-		border-radius: 1rem;
-		&__select {
-			width: 40%;
-		}
-	}
-	.presentation__btn-standard {
 		width: 40%;
+	}
+	.location {
 	}
 }
 
